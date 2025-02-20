@@ -1,0 +1,56 @@
+{
+    "baywang": {
+        "password": "000102",
+        "name": "Bay En Wang",
+        "location": "Santa Cruz, CA",
+        "phone": "(626)-278-4726",
+        "linkedin": "www.linkedin.com/in/bay-wang-300225235",
+        "email": "smile23025@gmail.com",
+        "career_objective": "I am a Computer Science major at UCSC with a strong interest in software engineering and AI. I am eager to apply my passion for technology to innovative projects and collaborative environments.",
+        "education": [
+            {
+                "school": "University of California, Santa Cruz",
+                "duration": "Sep 2024 - present",
+                "degree": "Bachelor of Science in Computer Science"
+            },
+            {
+                "school": "Fullerton College",
+                "duration": "Aug 2019 - May 2024",
+                "degree": [
+                    "Associate degree of Science and Mathematics",
+                    "Associate of Science in Mathematics",
+                    "Associate degree of Computer Science",
+                    "Associate degree of Social Science"
+                ]
+            }
+        ],
+        "work_experience": [
+            {
+                "company": "Magikid Robotics Lab",
+                "location": "Los Angeles, CA",
+                "role": "Teaching Assistant",
+                "duration": "Jan 2023 - May 2023",
+                "responsibilities": [
+                    "Led introductory classes in Python and Scratch, teaching programming skills to children.",
+                    "Instructed students in constructing and operating robotics, providing detailed, step-by-step instructions on assembly and operation.",
+                    "Facilitated hands-on learning experiences, fostering problem-solving skills and guiding students through real-world applications of coding and robotics."
+                ]
+            },
+            {
+                "company": "Fullerton College",
+                "location": "Los Angeles, CA",
+                "role": "Tutor",
+                "duration": "Jan 2022 - Dec 2022",
+                "responsibilities": [
+                    "Supported teachers in successfully executing course plans and provided individualized assistance to help students grasp complex concepts.",
+                    "Demonstrated strong time management, effective communication, and leadership skills to ensure productive learning environments and smooth course progression."
+                ]
+            }
+        ],
+        "skills": {
+            "Programming Languages": ["Python", "Java", "C++"],
+            "Courses": ["Algorithm", "Data Structures", "Probability for Engineering", "Computer System and Organization"],
+            "Languages": ["English", "Chinese"]
+        }
+    }
+}

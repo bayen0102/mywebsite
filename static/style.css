@@ -1,0 +1,253 @@
+/* 全局樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 設定全局字體 */
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+}
+
+/* 左側導航欄 */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    padding: 25px;
+    border-right: 2px solid black;
+    overflow-y: auto;
+}
+
+/* LOGO 設計 */
+.sidebar h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    color: #555;
+    padding-left: 5px;
+}
+
+/* 主內容區 */
+.content {
+    margin-left: 220px;
+    width: calc(100vw - 220px);
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* ======== Hero Section（主畫面） ======== */
+.hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Hero 內部內容 */
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+.hero-image {
+    max-width: 800px;  /* 限制圖片最大寬度 */
+    width: 100%;  /* 自適應寬度 */
+    height: auto;  /* 確保圖片比例正常 */
+    margin-top: 20px;  /* 適當間距 */
+}
+/* Call to Action */
+.hero-section a {
+    color: hwb(0 3% 89%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-section a:hover {
+    color: hwb(0 82% 16%);
+}
+
+/* Explore 按鈕設計 */
+.explore-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #92b6fa;
+    text-decoration: none;
+    background: linear-gradient(90deg, #e1e1e3, hwb(0 96% 3%));
+    border-radius: 25px;
+    box-shadow: 0 4px 10px hsla(237, 100%, 59%, 0.502);
+    transition: all 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(90deg, #e1e1e1, #f6bed9);
+    box-shadow: 0 6px 15px #89c8ff80;
+    transform: translateY(-2px);
+}
+
+
+/* ======== Skills 區塊 ======== */
+.skills-section {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+/* Skills 標題 */
+.skills-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Skills 排版 (確保 icons 左右排列) */
+.skills-grid {
+    display: flex;  /* 讓技能圖示水平排列 */
+    flex-wrap: wrap;  /* 允許圖示換行 */
+    justify-content: center;  /* 讓技能圖示置中 */
+    gap: 40px;  /* 設定技能之間的間距 */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 每個技能 */
+.skill-item {
+    width: 120px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* 技能圖標 */
+.skill-item img {
+    width: 80px;  
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* ======== Experience / Education（時間軸）======== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding-left: 20px;
+    border-left: 3px solid white;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-content {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.timeline-content span {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* ======== 響應式設計 ======== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.5rem;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

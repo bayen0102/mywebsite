@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education - Bay Wang</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+
+    <!-- 側邊導航欄 -->
+    <nav class="sidebar">
+        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('experience') }}">Experience</a></li>
+            <li><a href="{{ url_for('education') }}" class="active">Education</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('background') }}">Background</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main class="content">
+        <h1 class="page-title">Education</h1>
+
+        <!-- 時間軸設計 -->
+        <div class="timeline">
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>University of California, Santa Cruz</h3>
+                    <p><strong>Bachelor of Science in Computer Science | 2024 - 2026</strong></p>
+                    <p>Studied software engineering, high-performance computing, artificial intelligence, data structures, and algorithms.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>Fullerton College</h3>
+                    <p><strong>Associate Degree in Mathematics and Computer Science | 2019 - 2024</strong></p>
+                    <p>Focused on mathematics, logical thinking, and programming, preparing for further university studies.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Bay Wang</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('experience') }}">Experience</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('background') }}">Background</a></li>
+            <li><a href="{{ url_for('projects') }}" class="active">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1 class="page-title">Projects</h1>
+        <div class="project">
+            <h2>AI Chatbot</h2>
+            <p>A chatbot built using Python and GPT API.</p>
+            <a href="https://github.com/your-github/chatbot"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </main>
+</body>
+</html>

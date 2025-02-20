@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experience - Bay Wang</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('experience') }}" class="active">Experience</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('background') }}">Background</a></li>
+            <li><a href="{{ url_for('static', filename='resume.pdf') }}" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1 class="page-title" style="margin-bottom: 35px;">Experience</h1>
+
+        <div class="experience-container">
+            <div class="experience-item" style="margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px;">
+                    <i class="fas fa-robot"></i> Magikid Robotics Lab <span>(Teaching Assistant | Jan 2023 - May 2023)</span>
+                </h3>
+                <p style="margin-bottom: 10px;">Led introductory classes in Python and Scratch, teaching programming skills to children aged 7-12.</p>
+                <p style="margin-bottom: 10px;">Provided hands-on guidance in robotics assembly, programming, and troubleshooting.</p>
+                <p style="margin-bottom: 10px;">Designed interactive coding challenges to reinforce logical thinking and problem-solving skills.</p>
+                <p>Helped students apply programming concepts to real-world robotic applications, enhancing engagement and understanding.</p>
+            </div>
+
+            <div class="experience-item" style="margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px;">
+                    <i class="fas fa-chalkboard-teacher"></i> Fullerton College <span>(Tutor | Jan 2022 - Dec 2022)</span>
+                </h3>
+                <p style="margin-bottom: 10px;">Provided one-on-one and group tutoring sessions in mathematics and computer science.</p>
+                <p style="margin-bottom: 10px;">Assisted students in debugging code and understanding data structures and algorithms.</p>
+                <p style="margin-bottom: 10px;">Developed personalized study plans to help students grasp complex concepts more effectively.</p>
+                <p>Collaborated with faculty to ensure students received consistent support and guidance throughout their courses.</p>
+            </div>
+
+            <div class="experience-item" style="margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px;">
+                    <i class="fas fa-store"></i> Tea Champ <span>(Manager | 2018 - 2022)</span>
+                </h3>
+                <p style="margin-bottom: 10px;">Managed daily store operations, overseeing a team of 15 employees.</p>
+                <p style="margin-bottom: 10px;">Implemented a new inventory tracking system that reduced waste and saved 20% in costs.</p>
+                <p style="margin-bottom: 10px;">Designed and executed marketing strategies that increased customer retention by 30%.</p>
+                <p>Provided high-quality customer service, ensuring a consistent and professional experience.</p>
+            </div>
+
+            <div class="experience-item" style="margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px;">
+                    <i class="fas fa-mug-hot"></i> QYuanCha <span>(Staff | 2022 - 2023)</span>
+                </h3>
+                <p style="margin-bottom: 10px;">Prepared high-quality beverages while maintaining efficiency during peak hours.</p>
+                <p style="margin-bottom: 10px;">Collaborated with the marketing team to develop promotional campaigns that increased sales.</p>
+                <p>Trained new employees on beverage preparation and customer interaction to maintain service quality.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

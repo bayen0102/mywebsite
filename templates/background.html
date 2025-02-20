@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background - Bay Wang</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+
+    <!-- 側邊導航欄 -->
+    <nav class="sidebar">
+        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('experience') }}">Experience</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('skills') }}">Skills</a></li>
+            <li><a href="{{ url_for('background') }}" class="active">Background</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main class="content">
+        <h1 class="page-title" style="margin-bottom: 30px;">Background</h1>
+        <div id="background" class="background-container"> <!-- 這裡加上 id="background" -->
+            <div class="background-container">
+            <div class="background-section" style="margin-bottom: 25px;">
+                <h3 style="margin-bottom: 10px;">Personal Interests</h3>
+                <p style="margin-bottom: 10px;">Passionate about programming and UI/UX design.</p>
+                <p style="margin-bottom: 10px;">Enthusiastic about AI and data analytics.</p>
+                <p style="margin-bottom: 10px;">Researching branding and marketing strategies, applying them to store management.</p>
+            </div>
+    
+            <div class="background-section" style="margin-bottom: 25px;">
+                <h3 style="margin-bottom: 10px;">Career Development</h3>
+                <p style="margin-bottom: 10px;">Aspiring to become a Full-Stack Engineer or AI Engineer.</p>
+                <p style="margin-bottom: 10px;">Seeking to integrate technology and business management to develop innovative products.</p>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+</html>
+
