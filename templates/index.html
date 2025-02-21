@@ -8,62 +8,65 @@
 </head>
 <body>
 
-
-    <!-- 左側導航欄 -->
-    <nav class="sidebar">
-        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
-        <ul class="nav-links">
-            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-            <li><a href="{{ url_for('education') }}">Education</a></li>
-            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-            <li><a href="{{ url_for('background') }}">Background</a></li>
-        </ul>
-    </nav>
-
+    <!-- 頂部導航欄 -->
+    <header class="top-nav">
+        <h1 class="logo">BAY WANG</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('background') }}">Background</a></li>
+                <li><a href="{{ url_for('resume') }}">Download Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- 主要內容 -->
     <main class="content">
         <section class="hero-section">
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Developer | Creative Thinker</p>
+                <h1 class="fade-in-down">Welcome to My Portfolio</h1>
+                <p class="fade-in-down">Developer | Creative Thinker</p>
                 <a href="{{ url_for('background') }}#background" class="explore-btn">Explore</a>
             </div>
         </section>
 
-
         <section class="project">
-            <h2>Hi, I'm Bay!</h2>
+            <h2>
+                Hi, I'm Bay! 
+                <img class="inline-icon" src="{{ url_for('static', filename='icons/hi.png') }}" alt="hi">
+            </h2>
             <p><i>Welcome to my personal page...</i></p>
             <img src="{{ url_for('static', filename='images/IMG_2397.JPG') }}" class="hero-image" alt="Artwork">
         </section>
-                <!-- Contact Section -->
-                <footer class="contact-section">
-                    <h2>Contact</h2>
-                    <p>If you are interested in working together, please don't hesitate to get in touch with me.</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/bayen0102" target="_blank">
-                            <img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub">
-                        </a>
-                        <a href="https://www.linkedin.com/feed/" target="_blank">
-                            <img src="{{ url_for('static', filename='icons/linkedin.png') }}" alt="LinkedIn">
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <img src="{{ url_for('static', filename='icons/ig.png') }}" alt="Instagram">
-                        </a>
-                    </div>
-                </footer>
+        
+
+        <!-- Contact Section -->
+        <footer class="contact-section">
+            <h2>Contact</h2>
+            <div class="social-icons">
+                <a href="https://github.com/bayen0102" target="_blank">
+                    <img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/bay-wang-300225235/" target="_blank">
+                    <img src="{{ url_for('static', filename='icons/linkedin.png') }}" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/bayenwang/" target="_blank">
+                    <img src="{{ url_for('static', filename='icons/ig.png') }}" alt="Instagram">
+                </a>
+            </div>
+        </footer>
         
         <!-- 回到頂部按鈕 -->
-        <button onclick="topFunction()" id="backToTop" title="回到頂部">↑</button>
+        <button onclick="topFunction()" id="backToTop" title="Back to Top"></button>
 
     </main>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
-
-
 </body>
 </html>
+
 
 
 

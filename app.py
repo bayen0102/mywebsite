@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
@@ -26,6 +26,12 @@ def background():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+
+@app.route('/resume')
+def resume():
+    return send_from_directory('static', 'resume.pdf', as_attachment=True)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

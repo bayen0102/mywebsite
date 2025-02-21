@@ -1,48 +1,43 @@
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Background - Bay Wang</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
-</head>
-<body>
+{% block title %}Background - Bay Wang{% endblock %}
 
-    <!-- 側邊導航欄 -->
-    <nav class="sidebar">
-        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
-        <ul class="nav-links">
-            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-            <li><a href="{{ url_for('education') }}">Education</a></li>
-            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-            <li><a href="{{ url_for('background') }}" class="active">Background</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        </ul>
-    </nav>
+{% block content %}
+    <h1 class="page-title" style="margin-bottom: 35px;">Background</h1>
+    <div class="background-image">
+        <img src="{{ url_for('static', filename='images/me.gif') }}" alt="Me">
+    </div>
 
-    <!-- 主要內容區 -->
-    <main class="content">
-        <h1 class="page-title" style="margin-bottom: 30px;">Background</h1>
-        <div id="background" class="background-container"> <!-- 這裡加上 id="background" -->
-            <div class="background-container">
-            <div class="background-section" style="margin-bottom: 25px;">
-                <h3 style="margin-bottom: 10px;">Personal Interests</h3>
-                <p style="margin-bottom: 10px;">Passionate about programming and UI/UX design.</p>
-                <p style="margin-bottom: 10px;">Enthusiastic about AI and data analytics.</p>
-                <p style="margin-bottom: 10px;">Researching branding and marketing strategies, applying them to store management.</p>
-            </div>
-    
-            <div class="background-section" style="margin-bottom: 25px;">
-                <h3 style="margin-bottom: 10px;">Career Development</h3>
-                <p style="margin-bottom: 10px;">Aspiring to become a Full-Stack Engineer or AI Engineer.</p>
-                <p style="margin-bottom: 10px;">Seeking to integrate technology and business management to develop innovative products.</p>
-            </div>
-        </div>
-    </main>
-    
+    <div class="background-container">
+        <p>
+            Hello, I'm <strong>Bay Wang</strong>, originally from <strong>Taiwan</strong> and currently based in the <strong>United States</strong>.
+        </p>
 
-</body>
-</html>
+        <p>
+            I spent <strong>two years at Fullerton College</strong>, earning <strong>Associate Degrees</strong> in 
+            <strong>Computer Science</strong>, <strong>Mathematics</strong>, <strong>Social Science</strong>, and <strong>Science & Mathematics</strong>.
+            After transferring to the <strong>University of California, Santa Cruz (UCSC)</strong>, I am now pursuing a <strong>B.S. in Computer Science</strong>.
+        </p>
+
+        <p>
+            Academically, my focus is on <strong>Machine Learning fundamentals</strong> and <strong>Computer Network Development & Design</strong>. 
+            I am also pursuing a <strong>Technology and Information Management minor</strong>, expecting to graduate in <strong>Winter 2027</strong>.
+        </p>
+
+        <p>
+            My interests include <strong>Web System Design</strong>, <strong>UI/UX</strong>, and <strong>AI Research</strong>.
+            I am particularly passionate about <strong>Software Development</strong>, <strong>Information Management</strong>, and <strong>DevOps</strong>.
+        </p>
+
+        <p>
+            I enjoy exploring new technologies and continuously improving my skills in programming, system design, and digital infrastructure.
+        </p>
+    </div>
+
+{% endblock %}
+
+
+
+
+
 

@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // 初始化時執行一次
 
+
+    
+
     // ========== 技能條動畫（Skills） ==========
     function updateSkillBars() {
         let skillBars = document.querySelectorAll('.skill-bar');

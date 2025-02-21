@@ -1,84 +1,66 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skills - Bay Wang</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <nav class="sidebar">
-        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
-        <ul class="nav-links">
-            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-            <li><a href="{{ url_for('education') }}">Education</a></li>
-            <li><a href="{{ url_for('skills') }}" class="active">Skills</a></li>
-            <li><a href="{{ url_for('background') }}">Background</a></li>
-        </ul>
-    </nav>
+{% extends "base.html" %}
 
-    <main class="content">
-        <h1 class="page-title">Skills</h1>
+{% block title %}Skills - Bay Wang{% endblock %}
 
-        <section class="skills-section">
-            <h2>Web Development</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/react.png') }}" alt="React.js">
-                    <p>React.js</p>
-                </div>
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/js.gif') }}" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/html.png') }}" alt="HTML5">
-                    <p>HTML5</p>
-                </div>
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/css.png') }}" alt="CSS3">
-                    <p>CSS3</p>
-                </div>
+{% block content %}
+    <h1 class="page-title"  style="margin-top: 50px;">Skills</h1>
+
+    <!-- Web Development Skills -->
+    <section class="skills-section">
+        <h2>Web Development</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/react.png') }}" alt="React.js">
+                <p>React.js</p>
             </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>Programming Languages</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/c++.png') }}" alt="C++">
-                    <p>C++</p>
-                </div>
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/python.gif') }}" alt="Python">
-                    <p>Python</p>
-                </div>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/js.gif') }}" alt="JavaScript">
+                <p>JavaScript</p>
             </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>DevOps & Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/git.png') }}" alt="Git">
-                    <p>Git</p>
-                </div>
-                <div class="skill-item">
-                    <img src="{{ url_for('static', filename='icons/ubuntu.png') }}" alt="Ubuntu">
-                    <p>Ubuntu</p>
-                </div>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/html.png') }}" alt="HTML5">
+                <p>HTML5</p>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/css.png') }}" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Programming Languages -->
+    <section class="skills-section">
+        <h2>Programming Languages</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/c++.png') }}" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/python.gif') }}" alt="Python">
+                <p>Python</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- DevOps & Tools -->
+    <section class="skills-section">
+        <h2>DevOps & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/ubuntu.png') }}" alt="Ubuntu">
+                <p>Ubuntu</p>
+            </div>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/git.png') }}" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="skill-item">
+                <img src="{{ url_for('static', filename='icons/github.png') }}" alt="Github">
+                <p>Github</p>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
+{% endblock %}
 

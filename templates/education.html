@@ -1,54 +1,34 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Education - Bay Wang</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
-</head>
-<body>
+{% extends "base.html" %}
 
-    <!-- 側邊導航欄 -->
-    <nav class="sidebar">
-        <h1 class="logo"><a href="{{ url_for('index') }}">BAY WANG</a></h1>
-        <ul class="nav-links">
-            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-            <li><a href="{{ url_for('education') }}" class="active">Education</a></li>
-            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-            <li><a href="{{ url_for('background') }}">Background</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        </ul>
-    </nav>
+{% block title %}Education - Bay Wang{% endblock %}
 
-    <!-- 主要內容區 -->
-    <main class="content">
-        <h1 class="page-title">Education</h1>
+{% block content %}
+    <h1 class="page-title" style="margin-top: 50px;">Education</h1>
 
-        <!-- 時間軸設計 -->
-        <div class="timeline">
-
-            <div class="timeline-item fade-in">
-                <div class="timeline-content">
-                    <h3>University of California, Santa Cruz</h3>
-                    <p><strong>Bachelor of Science in Computer Science | 2024 - 2026</strong></p>
-                    <p>Studied software engineering, high-performance computing, artificial intelligence, data structures, and algorithms.</p>
-                </div>
+    <div class="timeline">
+        <div class="timeline-item visible">
+            <div class="timeline-content">
+                <h3><i class="fas fa-graduation-cap"></i> University of California, Santa Cruz</h3>
+                <span>(B.S. Computer Science | 2024 - Present)</span>
+                <p>Currently pursuing a Bachelor of Science in Computer Science.</p>
+                <p>Relevant coursework: Data Structures, Algorithms, Artificial Intelligence, Machine Learning.</p>
+                <p>Focused on fundamentals of Machine Learning and computer network development & design.</p>
+                <p>Currently pursuing a Technology and Information Management minor, expected to graduate in Winter 2027.</p>
             </div>
-
-            <div class="timeline-item fade-in">
-                <div class="timeline-content">
-                    <h3>Fullerton College</h3>
-                    <p><strong>Associate Degree in Mathematics and Computer Science | 2019 - 2024</strong></p>
-                    <p>Focused on mathematics, logical thinking, and programming, preparing for further university studies.</p>
-                </div>
-            </div>
-
         </div>
-    </main>
 
-</body>
-</html>
+        <div class="timeline-item visible">
+            <div class="timeline-content">
+                <h3><i class="fas fa-school"></i> Fullerton College</h3>
+                <span>(A.S. Computer Science | 2022 - 2024)</span>
+                <p>Earned Associate Degrees in Computer Science, Mathematics, Social Science, and Science & Mathematics.</p>
+                <p>Developed strong foundations in programming, networking, and cybersecurity.</p>
+                <p>Participated in hackathons and collaborative coding projects.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 
 
 
