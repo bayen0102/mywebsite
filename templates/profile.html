@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bay Wang - 個人主頁</title>
+    <title>Bay Wang - Personal Portfolio </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -16,20 +16,20 @@
         <div class="hero-content text-center">
             <h1 class="display-3 fade-in">Bay Wang</h1>
             <p class="lead fade-in-delay">Computer Science Major at UCSC</p>
-            <a href="#about" class="btn btn-custom">探索更多</a>
+            <a href="#about" class="btn btn-custom">Explore</a>
         </div>
     </header>
 
     <section id="about" class="container mt-5">
         <div class="card shadow-lg p-4">
-            <h2 class="text-center">關於我</h2>
+            <h2 class="text-center">About me</h2>
             <p>{{ user.career_objective }}</p>
         </div>
     </section>
 
     <section id="experience" class="container mt-5">
         <div class="card shadow-lg p-4">
-            <h2 class="text-center">工作經歷</h2>
+            <h2 class="text-center">Experience</h2>
             <ul>
                 {% for job in user.work_experience %}
                 <li>
@@ -47,10 +47,10 @@
 
     <section id="skills" class="container mt-5">
         <div class="card shadow-lg p-4">
-            <h2 class="text-center">技能</h2>
-            <p><strong>程式語言：</strong> {{ ", ".join(user.skills["Programming Languages"]) }}</p>
-            <p><strong>相關課程：</strong> {{ ", ".join(user.skills["Courses"]) }}</p>
-            <p><strong>語言：</strong> {{ ", ".join(user.skills["Languages"]) }}</p>
+            <h2 class="text-center">Skills</h2>
+            <p><strong>Programming language：</strong> {{ ", ".join(user.skills["Programming Languages"]) }}</p>
+            <p><strong>Releted courses：</strong> {{ ", ".join(user.skills["Courses"]) }}</p>
+            <p><strong>Language：</strong> {{ ", ".join(user.skills["Languages"]) }}</p>
         </div>
     </section>
 
@@ -58,10 +58,11 @@
         <p>&copy; 2025 Bay Wang. All rights reserved.</p>
     </footer>
 
-    <!-- 引入粒子動畫 JS -->
+    <!-- into JS animation-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>
+
 
