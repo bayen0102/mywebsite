@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // ========== 回到頂部按鈕功能 ==========
+  
     let backToTopBtn = document.getElementById("backToTop");
 
-    // 當用戶向下滾動 300px，顯示按鈕
     window.onscroll = function () {
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             backToTopBtn.style.display = "block";
@@ -11,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // 點擊按鈕，平滑滾動回頂部
+    // click the button to smoothly scroll back to the top
     window.topFunction = function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    // ========== 滾動淡入動畫 ==========
+    // ========== scroll fade-in animation==========
     let fadeElements = document.querySelectorAll(".fade-in");
 
     function checkVisibility() {
@@ -29,12 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // 初始化時執行一次
+    checkVisibility(); //execute once on initialization
 
 
     
 
-    // ========== 技能條動畫（Skills） ==========
+    // ========== Skills animation ==========
     function updateSkillBars() {
         let skillBars = document.querySelectorAll('.skill-bar');
         skillBars.forEach(bar => {
@@ -43,12 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 如果當前頁面有技能區塊，則執行動畫
+    // if the current page contains a skills section, execute the animation
     if (document.querySelector(".skills-container")) {
         updateSkillBars();
     }
 
-    // ========== 響應式側邊欄（手機版選單） ==========
+    // ========== responsive sidebar (mobile menu) ==========
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
@@ -58,5 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
 
 
