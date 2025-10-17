@@ -22,7 +22,7 @@ def skills():
 def background():
     return render_template('background.html')
 
-# 確保 `projects` 路由存在
+# make sure `projects` route exist
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
