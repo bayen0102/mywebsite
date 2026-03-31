@@ -392,46 +392,7 @@ main {
     color: white;
     line-height: 1.6;
 }
-/* PROJECT SECTION FIX */
-.project-section {
-    margin-top: 40px;
-}
 
-.project-card {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.project-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #ffb6c1;
-    margin-bottom: 5px;
-}
-
-.project-date {
-    display: block;
-    font-size: 1rem;
-    color: #aaa;
-    margin-bottom: 15px;
-}
-
-/* list*/
-.project-list li{
-    list-style: disc;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.project-card {
-    margin-bottom: 40px;
-    text-align: left; 
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*--------*/
 
 .skills-section {
     text-align: center;
