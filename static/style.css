@@ -392,7 +392,45 @@ main {
     color: white;
     line-height: 1.6;
 }
+/* PROJECT SECTION FIX */
+.project-section {
+    margin-top: 40px;
+}
 
+.project-card {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffb6c1;
+    margin-bottom: 5px;
+}
+
+.project-date {
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* list*/
+.project-list {
+    list-style: disc;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+/*--------*/
 
 .skills-section {
     text-align: center;
